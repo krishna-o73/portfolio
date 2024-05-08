@@ -18,7 +18,27 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+.se{
+  color: rgb(0, 0, 0);
+}
+.se1{
+  color: rgb(198, 81, 237)
+}
+/* Color theme */
+.light-mode {
+  --color-primary: #ffffff;
+  --color-secondary: #180b03;
+}
 
+.dark-mode {
+  --color-primary: #271b1b;
+  --color-secondary: #f7f9fc;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
 /* TRANSITION */
 
 a,
@@ -34,6 +54,7 @@ nav,
 }
 
 nav {
+  background-color: var(--color-primary);
   justify-content: space-around;
   align-items: center;
   height: 17vh;
@@ -46,7 +67,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: (--color-secondary);
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -69,6 +90,7 @@ a:hover {
 /* HAMBURGER MENU */
 
 #hamburger-nav {
+  background-color: aliceblue;
   display: none;
 }
 
@@ -360,8 +382,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .project-img {
@@ -385,12 +407,12 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: var(--color-secondary);
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .project-topic {
@@ -410,8 +432,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--color-secondary) 0.1rem solid;
+  border-color: var(--color-secondary);
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
